@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>快手小硕百宝箱官网</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+        }
+        .button-group {
+            margin-bottom: 30px;
+        }
+        button {
+            padding: 12px 30px;
+            font-size: 18px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .info-box {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: none;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎来到快手小硕百宝箱的官网</h1>
+        
+        <div class="button-group">
+            <button onclick="handleFileShare()">文件共享</button>
+            <div id="passwordInfo" class="info-box">密码是：ksxsbbx</div>
+        </div>
+
+        <div class="button-group">
+            <button onclick="showContactInfo()">联系我</button>
+            <div id="contactInfo" class="info-box">15668950112</div>
+        </div>
+
+        <div class="button-group">
+            <button onclick="showSupportInfo()">支持方</button>
+            <div id="supportInfo" class="info-box">蓝凑云</div>
+        </div>
+    </div>
+
+    <script>
+        // 文件共享按钮处理
+        function handleFileShare() {
+            document.getElementById('passwordInfo').style.display = 'block';
+            // 延迟跳转确保密码可见
+            setTimeout(() => {
+                window.location.href = 'https://ksxs2016-lc.lanzoub.com/b01885cvqd';
+            }, 2000);
+        }
+
+        // 联系信息显示
+        function showContactInfo() {
+            const info = document.getElementById('contactInfo');
+            info.style.display = 'block';
+            setTimeout(() => {
+                info.style.display = 'none';
+            }, 5000);
+        }
+
+        // 支持方显示
+        function showSupportInfo() {
+            const info = document.getElementById('supportInfo');
+            info.style.display = 'block';
+            setTimeout(() => {
+                info.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
